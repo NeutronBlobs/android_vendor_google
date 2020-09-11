@@ -20,6 +20,16 @@ soong_namespace {
 }
 
 android_app_import {
+	name: "QAS_DVC_MSP_VZW",
+	owner: "google",
+	apk: "proprietary/app/QAS_DVC_MSP_VZW/QAS_DVC_MSP_VZW.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "datastatusnotification",
 	owner: "google",
 	apk: "proprietary/app/datastatusnotification/datastatusnotification.apk",
@@ -50,6 +60,16 @@ android_app_import {
 }
 
 android_app_import {
+	name: "vzw_msdc_api",
+	owner: "google",
+	apk: "proprietary/app/vzw_msdc_api/vzw_msdc_api.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+}
+
+android_app_import {
 	name: "CNEService",
 	owner: "google",
 	apk: "proprietary/priv-app/CNEService/CNEService.apk",
@@ -61,31 +81,9 @@ android_app_import {
 }
 
 android_app_import {
-	name: "LLKAgent",
-	owner: "google",
-	apk: "proprietary/priv-app/LLKAgent/LLKAgent.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
 	name: "OemDmTrigger",
 	owner: "google",
 	apk: "proprietary/priv-app/OemDmTrigger/OemDmTrigger.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-}
-
-android_app_import {
-	name: "VzwOmaTrigger",
-	owner: "google",
-	apk: "proprietary/priv-app/VzwOmaTrigger/VzwOmaTrigger.apk",
 	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
@@ -156,18 +154,6 @@ android_app_import {
 	owner: "google",
 	apk: "proprietary/product/priv-app/CarrierSettings/CarrierSettings.apk",
 	presigned: true,
-	dex_preopt: {
-		enabled: false,
-	},
-	privileged: true,
-	product_specific: true,
-}
-
-android_app_import {
-	name: "CarrierSetup",
-	owner: "google",
-	apk: "proprietary/product/priv-app/CarrierSetup/CarrierSetup.apk",
-	certificate: "platform",
 	dex_preopt: {
 		enabled: false,
 	},
@@ -379,6 +365,18 @@ android_app_import {
 	product_specific: true,
 }
 
+android_app_import {
+	name: "CarrierSetup",
+	owner: "google",
+	apk: "proprietary/system_ext/priv-app/CarrierSetup/CarrierSetup.apk",
+	certificate: "platform",
+	dex_preopt: {
+		enabled: false,
+	},
+	privileged: true,
+	system_ext_specific: true,
+}
+
 dex_import {
 	name: "cneapiclient",
 	owner: "google",
@@ -426,6 +424,37 @@ dex_import {
 	owner: "google",
 	jars: ["proprietary/product/framework/libhwinfo.jar"],
 	product_specific: true,
+}
+
+dex_import {
+	name: "RadioConfigLib",
+	owner: "google",
+	jars: ["proprietary/system_ext/framework/RadioConfigLib.jar"],
+	system_ext_specific: true,
+}
+
+dex_import {
+	name: "com.android.hotwordenrollment.common.util",
+	owner: "google",
+	jars: ["proprietary/system_ext/framework/com.android.hotwordenrollment.common.util.jar"],
+	system_ext_specific: true,
+}
+
+cc_prebuilt_library_shared {
+	name: "libsdsprpc",
+	owner: "google",
+	strip: {
+		none: true,
+	},
+	target: {
+		android_arm64: {
+			srcs: ["proprietary/vendor/lib64/libsdsprpc.so"],
+		},
+	},
+	compile_multilib: "64",
+	check_elf_files: false,
+	prefer: true,
+	soc_specific: true,
 }
 
 android_app_import {
@@ -476,6 +505,15 @@ dex_import {
 	name: "qti-vzw-ims-internal",
 	owner: "google",
 	jars: ["proprietary/vendor/framework/qti-vzw-ims-internal.jar"],
+	soc_specific: true,
+}
+
+prebuilt_etc_xml {
+	filename_from_src: true,
+	name: "manifest_android.hardware.drm@1.3-service.widevine",
+	owner: "google",
+	src: "proprietary/vendor/etc/vintf/manifest/manifest_android.hardware.drm@1.3-service.widevine.xml",
+	sub_dir: "vintf/manifest",
 	soc_specific: true,
 }
 

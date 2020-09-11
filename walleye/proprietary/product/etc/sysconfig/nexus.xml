@@ -23,6 +23,9 @@
     <!-- Allow connectivitymonitor service in background -->
     <allow-in-power-save package="com.google.android.connectivitymonitor" />
 
+    <!-- Allow connectivitythermalpowermanager service in background -->
+    <allow-in-power-save package="com.google.android.connectivitythermalpowermanager" />
+
     <!-- Allow ramdump uploader service in background -->
     <allow-in-power-save package="com.android.ramdump" />
 
