@@ -206,6 +206,7 @@ PRODUCT_PACKAGES += \
     ConnMO \
     DCMO \
     DMService \
+    DevicePersonalizationPrebuiltPixel2 \
     DiagMon \
     EuiccGoogle \
     EuiccSupportPixel \
