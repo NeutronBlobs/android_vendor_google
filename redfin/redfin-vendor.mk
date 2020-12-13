@@ -19,7 +19,6 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/bin/qspmsvc:$(TARGET_COPY_OUT_PRODUCT)/bin/qspmsvc \
-    vendor/google/redfin/proprietary/product/bin/twoshay:$(TARGET_COPY_OUT_PRODUCT)/bin/twoshay \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/apt_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/apt_tw.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/att5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att5g_us.pb \
@@ -128,7 +127,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/etc/firmware/music_detector.descriptor:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.descriptor \
     vendor/google/redfin/proprietary/product/etc/firmware/music_detector.sound_model:$(TARGET_COPY_OUT_PRODUCT)/etc/firmware/music_detector.sound_model \
     vendor/google/redfin/proprietary/product/etc/init/qspmsvc.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/qspmsvc.rc \
-    vendor/google/redfin/proprietary/product/etc/init/twoshay.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/twoshay.rc \
     vendor/google/redfin/proprietary/product/etc/permissions/com.android.omadm.service.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.omadm.service.xml \
     vendor/google/redfin/proprietary/product/etc/permissions/com.android.sdm.plugins.connmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.connmo.xml \
     vendor/google/redfin/proprietary/product/etc/permissions/com.android.sdm.plugins.dcmo.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.android.sdm.plugins.dcmo.xml \

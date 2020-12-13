@@ -18,7 +18,6 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/google/bramble
 
 PRODUCT_COPY_FILES += \
-    vendor/google/bramble/proprietary/product/bin/twoshay:$(TARGET_COPY_OUT_PRODUCT)/bin/twoshay \
     vendor/google/bramble/proprietary/product/etc/felica/common.cfg:$(TARGET_COPY_OUT_PRODUCT)/etc/felica/common.cfg \
     vendor/google/bramble/proprietary/system_ext/lib/liblistenjni.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/liblistenjni.qti.so \
     vendor/google/bramble/proprietary/system_ext/lib64/liblistenjni.qti.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/liblistenjni.qti.so

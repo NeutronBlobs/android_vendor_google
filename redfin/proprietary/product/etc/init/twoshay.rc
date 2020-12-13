@@ -1,5 +1,0 @@
-service twoshay /product/bin/twoshay -s
-    class main
-    user system
-    group input
-    disabled
