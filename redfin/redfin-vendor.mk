@@ -19,6 +19,7 @@ PRODUCT_SOONG_NAMESPACES += \
 
 PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/bin/qspmsvc:$(TARGET_COPY_OUT_PRODUCT)/bin/qspmsvc \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/a1_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/a1_at.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/airtel_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/airtel_in.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/apt_tw.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/apt_tw.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/att5g_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/att5g_us.pb \
@@ -51,11 +52,13 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/firstnetpacific2_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/firstnetpacific2_us.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/firstnetpacific_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/firstnetpacific_us.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/fizz_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/fizz_ca.pb \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/free_fr.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/free_fr.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/freedommobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/freedommobile_ca.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/gamma_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/gamma_gb.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/h3_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_at.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/h3_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_gb.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/h3_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/h3_se.pb \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/halebop_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/halebop_se.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/homobile_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/homobile_it.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/idea_in.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idea_in.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/idmobile_gb.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/idmobile_gb.pb \
@@ -63,6 +66,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/kddimvno_jp.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kddimvno_jp.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/kena_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kena_it.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/koodo_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/koodo_ca.pb \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/kpn_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/kpn_nl.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/luckymobile_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/luckymobile_ca.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/movistar_es.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/movistar_es.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/o2_de.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/o2_de.pb \
@@ -91,6 +95,7 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/sprintprepaid_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintprepaid_us.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/sprintwholesale_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sprintwholesale_us.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/starhub_sg.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/starhub_sg.pb \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/stc_sa.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/stc_sa.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/sunrise_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/sunrise_ch.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/swisscom_ch.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/swisscom_ch.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/swisscom_li.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/swisscom_li.pb \
@@ -101,12 +106,14 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telenor_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telenor_dk.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telenor_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telenor_no.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telenor_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telenor_se.pb \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/telia_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telia_dk.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telia_no.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telia_no.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telia_se.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telia_se.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telstra_au.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telstra_au.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/telus_ca.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/telus_ca.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/three_dk.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/three_dk.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/tim_it.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tim_it.pb \
+    vendor/google/redfin/proprietary/product/etc/CarrierSettings/tmobile_at.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_at.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/tmobile_cz.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_cz.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/tmobile_nl.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_nl.pb \
     vendor/google/redfin/proprietary/product/etc/CarrierSettings/tmobile_us.pb:$(TARGET_COPY_OUT_PRODUCT)/etc/CarrierSettings/tmobile_us.pb \
@@ -290,7 +297,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.factory@2.1.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.data.slm@1.0.so \
-    vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.esepowermanager@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -331,7 +337,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.secureprocessor.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.secureprocessor.device@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.systemhelper@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.systemhelper@1.0.so \
-    vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.trustedui@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.trustedui@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callcapability@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib/vendor.qti.ims.callinfo@1.0.so \
@@ -417,7 +422,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.data.factory@2.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.data.factory@2.1.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.factory@2.1.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.data.slm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.data.slm@1.0.so \
-    vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.esepowermanager@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.esepowermanager@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.cryptfshw@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.cryptfshw@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.api@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.data.cne.internal.constants@1.0.so \
@@ -458,7 +462,6 @@ PRODUCT_COPY_FILES += \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.secureprocessor.device@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.slmadapter@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.slmadapter@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.systemhelper@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.systemhelper@1.0.so \
-    vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.trustedui@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.trustedui@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.hardware.tui_comm@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.hardware.tui_comm@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.ims.callcapability@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callcapability@1.0.so \
     vendor/google/redfin/proprietary/system_ext/lib64/vendor.qti.ims.callinfo@1.0.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/vendor.qti.ims.callinfo@1.0.so \
