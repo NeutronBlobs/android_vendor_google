@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<permissions>
+    <privapp-permissions package="com.google.android.odad">
+        <permission name="android.permission.GET_APP_OPS_STATS"/>
+        <permission name="android.permission.READ_OEM_UNLOCK_STATE"/>
+    </privapp-permissions>
+</permissions>
